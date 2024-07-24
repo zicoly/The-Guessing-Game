@@ -1,42 +1,49 @@
 body {
-    font-family: Arial, sans-serif;
-    background-image: url(./image/background.jpg);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0');
     background-repeat: no-repeat;
+    background-size: cover;
     background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
+    color: #333;
 }
 
 #game-container {
     text-align: center;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.9);
+    max-width: 400px;
+    width: 90%;
 }
 
 button {
-    padding: 10px 20px;
-    font-size: 16px;
+    padding: 12px 25px;
+    font-size: 18px;
     background-color: #007bff;
     color: #ffffff;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-top: 20px;
 }
 
 button:hover {
     background-color: #0056b3;
+    transform: scale(1.05);
 }
 
 input {
-    padding: 8px;
+    padding: 10px;
     font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    width: 50px;
+    width: 60px;
+    margin-top: 10px;
 }
