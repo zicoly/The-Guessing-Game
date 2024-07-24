@@ -24,7 +24,7 @@ function checkGuess() {
                 resetButton.style.display = 'block';
             } else {
                 let hint = guess < randomNumber ? 'higher' : 'lower';
-                messageElement.textContent = 'Incorrect! Try again.\nHint: Try a ' + hint + ' number.\n' + attempts + ' attempts left.';
+                messageElement.textContent = 'Incorrect! Try again.\t Hint: Try a ' + hint + ' number.\t [' + attempts + ' attempts left.]';
                 messageElement.style.color = 'red';
             }
         }
